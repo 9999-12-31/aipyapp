@@ -88,12 +88,5 @@ Python use - AIPython (Quit with 'exit()')
 
 ```
 
-## Thanks
-- 黑哥: 产品经理/资深用户/首席测试官
-- Sonnet 3.7: 生成了第一版的代码，几乎无需修改就能使用。
-- ChatGPT: 提供了很多建议和代码片段，特别是命令行接口。
-- Codeium: 代码智能补齐
-- Copilot: 代码改进建议和翻译 README
-
 
 
