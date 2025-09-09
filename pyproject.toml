@@ -1,6 +1,6 @@
 [project]
 name = "aipyapp"
-dynamic = ["version"]
+version = "0.1.0"
 description = "AIPyApp: AI-Powered Python & Python-Powered AI"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -56,18 +56,11 @@ aipy = "aipyapp.__main__:main"
 aipyw = "aipyapp.__main__:mainw"
 
 [build-system]
-requires = ["hatchling", "hatch-vcs>=0.5.0"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.hatch.version]
-source = "vcs"
-raw-options = { local_scheme = "no-local-version", version_scheme = "only-version" }
-
-[tool.hatch.build.hooks.vcs]
-version-file = "aipyapp/__version__.py"
-
 [[tool.uv.index]]
-url = "https://mirrors.aliyun.com/pypi/simple/"
+url = "http://172.19.230.1:18899/simple/"
 default = false
 
 [tool.ruff]
