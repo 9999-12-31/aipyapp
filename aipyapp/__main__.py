@@ -107,7 +107,9 @@ def init_settings(conf, args):
         display_config = settings.setdefault('display', {})
         display_config['style'] = args.style
     if args.agent:
-        settings['agent'] = {'port': args.port, 'host': args.host}
+        settings['agent'] = True
+        settings['port'] = args.port
+        settings['host'] = args.host
 
     #TODO: remove these lines
     if conf.check_config(gui=True) == 'TrustToken':
